@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+    />
+    <title>note-taking-editor</title>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+      <div class="bar--container">
+        <h1>note-taking-editor</h1>
+
+      </div>
+
+    <div class="editor--container">
+        <div class="textarea--container">
+            <textarea id="textarea" class="textarea" rows="30" cols="50"></textarea>
+        </div>
+        <div class="preview--container">
+            <div id="preview" class="preview">
+
+            </div>
+        </div>
+    </div>
+    <script src="./renderer.ts"></script>
+  </body>
+</html>
